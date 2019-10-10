@@ -1,19 +1,75 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>My Resume</title>
-
-  <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--This is the link to my font awesome-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="less/index.less">
+ <title>Shanda's Resume</title>
 </head>
-
 <body>
-  <h1>My Resume</h1>
+<div class="mainContainer"><!--WHhole body container-->
+        <div class= "navigationContainer">
+                <nav>
+                    <a href="#">About</a>
+                    <a href="#">Work History</a> 
+                    <a href="#">Skills</a> 
+                    <a href="#">Contact</a> 
+                  </nav>
+            </div>
+    <div class= "bigContainer"><!--This starts the big container div-->
+        <div class="imageContainer">
+            <img src="images/tinytreeinsnow.jpg" alt="A tree in snow">
+        </div>
+        <div class="textContainer">
+            <h1>Shanda Woods</h1>
+            <h2>Web Developer</h2>
+            <p>Hire me because I absolutely love Front End Dev!</p>
+            <span>___code here look up later____</span>
+            <p> more stuff that makes you have faith in me</p>
+            <button type="button">Contact me!</button>
+        </div>
+    </div><!--This closes the big container-->
+    
+    <div class="workContainer">
+            <h2>Work History</h2>
+            <ul>
+                <li>... </li>
+                <li>... </li>
+                <li>....</li>
+                <li>....</li>
+            </ul>
+    </div>
+<div class="skillsContainer">
+    <h2>Skills</h2>
+        
+        <h3>HTML</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ducimus modi magni laborum saepe fugiat, facere dolor consequuntur. Eligendi fugit quo eius officia, nobis alias. Illo doloremque aspernatur quam illum.</p>
+    
+        <h3>CSS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem id voluptates inventore placeat! Sequi rem inventore maiores ipsum impedit repudiandae id a deserunt reiciendis, perspiciatis deleniti neque. Corporis, tempora?</p>
+         <h3>JavaScript</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rerum ad minima accusamus maiores at reprehenderit earum suscipit dolorum. Maiores sit facere unde quod perferendis sapiente voluptas amet! Eaque, nemo.</p>
+</div>  
+
+<div class="footer">
+    <footer>
+            <h2>Get In Touch</h2>
+            <div>
+              <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+                <label for="name">Your Name</label>
+                <input type="name" name="name">
+                <label for="email">Your Email</label>
+                <input type="email" name="email">
+                <label for="message">Your Message</label>
+                <textarea name="message"></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+    </footer>  
+  
+</div>
 </body>
 </html>

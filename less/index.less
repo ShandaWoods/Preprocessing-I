@@ -50,10 +50,117 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
+@main-color:#2F4F4F;
+@main-font: Rokkitt;
+
+.bordered(){
+	border: 4px @main-color;
+	margin: 2%;
+	padding:2%;
+  }
 
 html, body {
-    height: 100%;
+	box-sizing: border-box;
+    font-size: 62.5%; 
+}
+h1, h2, h3, h4, h5 {
+	font-size: 2rem;
+  }
+  body{
+	font-family: @main-font;
+  }
+  img {
+	width: 100%;
+	height: auto;
+   }
+   p {
+	line-height: 1.25;
+	margin: 20px 0;
+	font-size: 1.8rem;
+	.bordered(@main-color);
+  }
+  .container {
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 1.6rem;
+  }
+.mainContainer{
+	.navigationContainer{
+		width:100%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		font-size: 24px;
+		color: @main-color;
+	}
+	.bigContainer {
+		background: #C0C0C0;
+		width:100%;
+		height: auto;
+			.textContainer {
+				font-size: 24px;
+				display: flex;
+				flex-direction: column;
+				align-items:flex-end;
+
+
+			}
+	}
+.imageContainer{
+	display: flex;
+	width: 100%;
+	height: auto;
+	img{
+		width: 25%;
+		height:auto;
+	}
+	
+}
+.workContainer{
+	
+				display: flex;
+				flex-direction: column;
+				align-items:flex-end;
+
 }
 
+.skillsContainer {
+	
+				display: flex;
+				flex-direction: column;
+				align-items:flex-start;
+.footer {
+					margin-bottom: 40px;
+					display: flex;
+					justify-content: center;
+					border-top: 1px black;
+					padding-top: 20px;
+					
+}
+}
+/*media query section*/
+
+@media (max-width: 500px){
+	nav{
+	  flex-direction:column;
+	  align-items:center;
+	}
+	.links{
+	  width:90%;
+	}
+	header{
+	  height:80vh;
+	}
+	.mainContainer{
+	  flex-direction:row;
+	  align-items:center;
+	}
+	.imageContainer{
+	  width:90%;
+	}
+  }
+}
